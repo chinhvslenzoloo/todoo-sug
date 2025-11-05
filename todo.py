@@ -32,6 +32,9 @@ def list_todos():
         status = "✅" if t["done"] else "❌"
         print(f"{i}. {t['title']} {status}")
 
+#ene hawitsaa delete hiideg vildeliig hii
+#def delete_todo(index):
+
 
 
 def toggle_todo(index):
@@ -62,6 +65,7 @@ def main():
                 toggle_todo(n)
             except ValueError:
                 print("⚠️ Зөв дугаар оруул.")
+        #elif cmd == "del": geed hii
         elif cmd == "exit":
             print("👋 Гарлаа!")
             break
